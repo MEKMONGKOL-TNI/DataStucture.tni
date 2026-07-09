@@ -1,0 +1,24 @@
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		
+		NumberArrayController nums = new NumberArrayController();
+		nums.display("Display an initial array:");
+		
+		int[] new_nums = new int[nums.getNums().length-1];
+		
+		int index_delete = 2;
+		
+		// See the concept -> Slide page 21
+		// Copy data of first-half (0 -> before index 2)
+		
+		// Copy data for end-half (after index 2 -> last element)
+		
+		// display update array
+		nums.setNums(new_nums);
+		nums.display("After deleted data index 2:");
+
+	}
+
+}
